@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="app.js">
+	<link rel="stylesheet" href="scripts/app.js">
+	<link rel="stylesheet" href="scripts/randomColor.js">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<title>Colin D'Amelio | Web Developer</title>
 </head>
-
 <body>
 
 	<div id="welcome">
@@ -19,7 +19,7 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#skills">Skills</a></li>
-				<li><a href="#Contact">Contact</a></li>
+				<li><a href="#footer">Contact</a></li>
 			</ul>
 		</div>
 		<div class="intro-wrap">
@@ -40,7 +40,7 @@
 				<h2>Welcome, I am <strong>Colin D'Amelio</strong><br>Front-End Web Developer</h2>
 				<p>I love building websites with a heavy emphasis on user experience and responsive, mobile-friendly structure.</p>
 				<p>Take a look around my website to learn more about me and some of the projects I have created.</p> 
-				<p>I am currently seeking a full-time position.</p>
+				<p>I am currently seeking a full-time position. <a href="images/colin_damelio_CV.pdf" target="_blank" class="print">Download Resume</a></p>
 			</div>
 			<ul class="media">
 				<li><a href="https://twitter.com/colindameli0" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
@@ -52,7 +52,7 @@
 
 	<div id="portfolio">
 		<h1 class="heading">My Portfolio</h1>
-		<div class="group">
+		<div class="group grey">
 			<div class="container clearfix">
 				<div class="side one">
 				<img src="images/responsive.png" height="611" width="800" alt="">
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 
-		<div class="group grey">
+		<div class="group">
 			<div class="container clearfix">
 				<div class="side">
 					<h2>Flickr API</h2>
@@ -96,7 +96,7 @@
 		</div>
 
 
-		<div class="group">
+		<div class="group grey">
 			<div class="container clearfix">
 				<div class="side one">
 					<img src="images/jquery.png" height="1332" width="1665" alt="">
@@ -120,9 +120,19 @@
 
 	<div id="skills"></div>
 
-	<div id="contact"></div>
+	<div id="footer">
+		<ul class="social-footer">
+			<li><a href="https://twitter.com/colindameli0" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/colindamelio" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			<li><a href="https://github.com/colindameli0" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+			<li><a href="http://instagram.com/colindameli0" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+		</ul>
+		<div class="email-wrap">
+			<p class="email"><a href="mailto:colin@colindamelio.com">colin@colindamelio.com</a></p>
+		</div>
 
-	<div id="footer"></div>
+
+	</div><!-- ../#footer -->
 
 
 
@@ -137,6 +147,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="app.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/randomColor.js"></script>
 </body>
 </html>
