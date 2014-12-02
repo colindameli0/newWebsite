@@ -16,10 +16,12 @@ $(document).ready(function(){
 	    return false;
 	});
 
+
+	//SHOW FIXED NAV ON SCROLL
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
 
-	    if (scroll >= 500) {
+	    if (scroll >= 350) {
 	        $(".nav").addClass("switch");
 	        $(".nav").addClass("logo");
 	        $(".nav h3").removeClass("hide");
@@ -29,6 +31,7 @@ $(document).ready(function(){
 	    }
 	});
 
+	//RANDOM COLOUR GENERATOR FOR FOOTER SOCIAL ICONS
 	$('.social-footer a').on('mouseover', function(){
 	  $(this).css('color', randomColor());
 	});
@@ -36,6 +39,21 @@ $(document).ready(function(){
 	$('.social-footer a').on('mouseout', function(){
 	  $(this).css('color', '#fff');
 	});
+
+
+	//MOBILE MENU DISPLAY
+	$('.mobile-menu').click(function(e){
+		e.preventDefault();
+		$('.nav ul').slideToggle('fast');
+	});
+	
+
+	//HIDE MENU ON LINK CLICK
+	$(".nav li a").on('click', function() {
+		$(".nav ul").hide();
+	 });
+
+
 
 
 
