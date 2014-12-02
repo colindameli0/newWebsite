@@ -50,13 +50,18 @@ $(document).ready(function(){
 
 	//HIDE MENU ON LINK CLICK
 	$(".nav li a").on('click', function() {
-		$(".nav ul").hide();
+		$(".collapse").hide();
 	 });
 
+	var mobileMenu = $(window).width();
 
+        $(window).resize(function() {
+          mobileMenu = $(window).width();
+          if (mobileMenu < 540) {
 
-
-
+              $('.nav ul').addClass('collapse');
+          }
+    });
 
 
 });
