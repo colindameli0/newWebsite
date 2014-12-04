@@ -58,7 +58,6 @@ $mainOrange: #F56D45;
 
 // ==========================================================================
 
-
 // ==================================
 // MAIN LANDING PAGE #WELCOME
 // ==================================
@@ -106,12 +105,11 @@ $mainOrange: #F56D45;
 		}
 	}
 	ul {
-		padding-top: 15px;
 		padding-right: 135px;
 		text-align: right;
 		width: 80%;
 		float: right;
-		margin: 0;
+		margin: 19px 0;
 	}
 	li {
 		display: inline-block;
@@ -204,9 +202,11 @@ $mainOrange: #F56D45;
  	float: left;
  	padding-top: 40px;
  	text-align: center;
+ 	width: 30%;
  		img {
  			border-radius: 50%;
  			border: 10px solid #eee;
+ 			width: 85%;
  		}
  }
 
@@ -257,7 +257,6 @@ $mainOrange: #F56D45;
 // PORTFOLIO SECTION #PORTFOLIO
 // ==================================
 
-
 #portfolio{
 	background: #EEEEEE;
 }
@@ -305,11 +304,22 @@ $mainOrange: #F56D45;
 		ul {
 			padding-left: 0;
 		}
-		h2 {
-			border-bottom: 4px solid $mainOrange;
+		h1 {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			display: inline-block;
-			line-height: 45px;
+			line-height: 40px;
+			color: #5a5a5a;
+			font-size: 1.90em;
+			font-weight: 300;
+			margin-bottom: 0;
+			span {
+				color: #777;
+			}
 		}
+		p {
+			font-size: 21px;
+			#color: #5a5a5a;
+			}
 		li {
 			display: inline-block;
 			color: rgb(0, 0, 0);
@@ -423,11 +433,7 @@ ul.social-footer {
 	background: #2C2C2C;
 	color: #fff;
 	overflow: auto;
-	font-size: 0.75em;
-	span {
-		color: #555555;
-		text-transform: uppercase;
-	}
+	font-size: 0.7em;
 }
 
 
@@ -443,7 +449,7 @@ ul.social-footer {
 @media (max-width: 1090px) {
 	.info {
 		margin-left: 0;
-		width: 55%;
+		width: 65%;
 	}
 }
 
@@ -487,6 +493,10 @@ ul.social-footer {
 		text-align: center;
 		width: 100%;
 		float: none;
+		img {
+			max-width: 100%;
+			width: 50%;
+		}
 	}
 
 }
@@ -510,6 +520,10 @@ ul.social-footer {
 @media (max-width: 540px) {
 
 //WELCOME PAGE
+
+	.intro-wrap {
+		padding-left: 10px;
+	}
 
 	.page-down {
 		display: none;
@@ -567,7 +581,10 @@ ul.social-footer {
 	}
 
 	.me-pic {
-		width: 80%;
+		width: 100%;
+		img {
+			width: 70%;
+		}
 	}
 
 	.media {
