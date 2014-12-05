@@ -16,7 +16,6 @@ $(document).ready(function(){
 	    return false;
 	});
 
-
 	//SHOW FIXED NAV ON SCROLL
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
@@ -25,9 +24,12 @@ $(document).ready(function(){
 	        $(".nav").addClass("switch");
 	        $(".nav").addClass("logo");
 	        $(".nav h3").removeClass("hide");
+	        $(".nav ul").addClass("collapse");
 	    } else {
 	        $(".nav").removeClass("switch");
 	        $(".nav h3").addClass("hide");
+	        $(".nav ul").removeClass("collapse");
+
 	    }
 	});
 
@@ -51,7 +53,15 @@ $(document).ready(function(){
 	//HIDE MENU ON LINK CLICK
 	$(".nav li a").on('click', function() {
 		$(".collapse").hide();
+		$('.mobile-menu').removeClass('open');
 	 });
+
+	$(function() {
+		$('.mobile-menu').click(function(e) {
+		  e.preventDefault();
+		  $(this).toggleClass('open');
+		});
+	});
 
 	var mobileMenu = $(window).width();
 
