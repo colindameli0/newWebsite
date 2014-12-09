@@ -25,12 +25,11 @@ $(document).ready(function(){
 	        $(".nav").addClass("logo");
 	        $(".nav h3").removeClass("hide");
 	        $(".nav ul").addClass("collapse");
+	        $(".nav ul").addClass("space");
 	    } else {
 	        $(".nav").removeClass("switch");
 	        $(".nav h3").addClass("hide");
-	        $(".nav ul").removeClass("collapse");
-
-	    }
+	    } 
 	});
 
 	//RANDOM COLOUR GENERATOR FOR FOOTER SOCIAL ICONS
@@ -52,8 +51,8 @@ $(document).ready(function(){
 
 	//HIDE MENU ON LINK CLICK
 	$(".nav li a").on('click', function() {
-		$(".collapse").hide();
-		$('.mobile-menu').removeClass('open');
+		$(".nav-menu").hide();
+		$('.mobile-menu').toggleClass('open');
 	 });
 
 	$(function() {
@@ -63,15 +62,14 @@ $(document).ready(function(){
 		});
 	});
 
-	var mobileMenu = $(window).width();
+	$(window).scroll(function() {
+	    var height = $(window).scrollTop();
 
-        $(window).resize(function() {
-          mobileMenu = $(window).width();
-          if (mobileMenu < 540) {
-
-              $('.nav ul').addClass('collapse');
-          }
-    });
-
+	    if(height  >= 350) {
+	    	$('.nav ul').css('margin-top', '0px');
+	    } else if (height < 540) {
+	    	$('.nav ul').css('margin-top', '50px');
+	    }
+	});
 
 });

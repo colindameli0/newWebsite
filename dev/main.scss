@@ -38,20 +38,6 @@ a:active,a:focus {
 outline: none !important;
 }
 
-input[type="text"],
-input[type="submit"] {
-  outline: none;
-}
-
-input[type="submit"]:hover {
-	background-color: pink;
-	transition: 0.4s all ease;
-}
-
-input:focus::-webkit-input-placeholder {
-    opacity: 0;
- }
-
 .window {position:relative;top:0;width: 1200px;max-width: 100%;margin:0 auto;z-index: 50;}
 
 $mainOrange: #F56D45;
@@ -148,9 +134,9 @@ $mainOrange: #F56D45;
 	}
 }
 
-.collapse {
-	margin-top: 0 !important;
-}
+// .space {
+// 	margin-top: 0 !important;
+// }
 
 .intro-wrap {
 	position: absolute;
