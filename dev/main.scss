@@ -20,7 +20,6 @@ body, html {
 	font-weight: 100;
 	height: 100%;
 	width: 100%;
-	max-width: 1440px;
 	margin: 0 auto;
 	padding-top: -8px;
 }
@@ -116,7 +115,6 @@ $mainOrange: #F56D45;
 	}
 }
 
-
 .hide {
 	display: none !important;
 	transition: all 0.4s ease-in-out;
@@ -131,10 +129,6 @@ $mainOrange: #F56D45;
 		color: #fff;
 	}
 }
-
-// .space {
-// 	margin-top: 0 !important;
-// }
 
 .intro-wrap {
 	position: absolute;
