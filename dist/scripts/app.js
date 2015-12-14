@@ -17,7 +17,7 @@ $(document).ready(function() {
             if (target.length === 0) target = $('a[name="' + this.hash.substr(1) + '"]');
             if (target.length === 0) target = $('html');
             $('html, body').animate({
-                scrollTop: target.offset().top - 75
+                scrollTop: target.offset().top - 70
             }, 500);
             return false;
         });
@@ -69,10 +69,13 @@ $(document).ready(function() {
             $(this).css('color', '#fff');
         });
 
+        //FUZZ
+        $('.fuzz').on('click', function(){
+            $('.fuzzy').css('display', 'block');
+        });
 
-    // })(jQuery);
+        $('.closeThis').on('click', function(){
+            $('.fuzzy').css('display', 'none');
+        });
+
 });
-
-// if($(window).width() <= 600){
-//   // do your stuff
-// }
