@@ -167,7 +167,7 @@
 	</div><!-- ../#footer -->
 
 	<div class="maste">
-		<p>2015 Colin D'Amelio | Front-End Web Developer | Toronto</p>
+		<p><span id="year"></span> Colin D'Amelio | Front-End Web Developer | Toronto</p>
 	</div>
 
 		
@@ -183,9 +183,7 @@
 
   ga('create', 'UA-53454122-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-
-</script>
+<script>document.getElementById('year').innerHTML = new Date().getFullYear()</script>
 </body>
 </html>
